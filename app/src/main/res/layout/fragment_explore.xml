@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E5E5">
+
+    <Button
+        android:id="@+id/pop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="38dp"
+        android:background="#8FA1E7"
+        android:text="POP"
+        app:layout_constraintBottom_toTopOf="@+id/metal"
+        app:layout_constraintEnd_toStartOf="@+id/rock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="38dp"
+        android:background="#8FA1E7"
+        android:text="rock"
+        app:layout_constraintBottom_toTopOf="@+id/jazz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/metal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="38dp"
+        android:background="#8FA1E7"
+        android:text="METAL"
+        app:layout_constraintBottom_toTopOf="@+id/rap_hiphop"
+        app:layout_constraintEnd_toStartOf="@+id/jazz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop" />
+
+    <Button
+        android:id="@+id/jazz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="38dp"
+        android:background="#8FA1E7"
+        android:text="JAZZ"
+        app:layout_constraintBottom_toTopOf="@+id/classic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/metal"
+        app:layout_constraintTop_toBottomOf="@+id/rock" />
+
+    <Button
+        android:id="@+id/rap_hiphop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="181dp"
+        android:background="#8FA1E7"
+        android:text="RAP/HIPHOP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/classic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/metal" />
+
+    <Button
+        android:id="@+id/classic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="181dp"
+        android:background="#8FA1E7"
+        android:text="CLASSIC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rap_hiphop"
+        app:layout_constraintTop_toBottomOf="@+id/jazz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
